@@ -804,10 +804,6 @@ textarea {
   font-weight: 500;
 }
 
-.header__menu li:first-child {
-  border-top: 1px solid rgba(20, 8, 4, 0.2);
-}
-
 .header__menu a {
   transition: color 0.3s ease-out;
 }
@@ -2693,10 +2689,6 @@ body.no-scroll {
     max-height: calc(550 * var(--width-multiplier));
   }
 
-  .header__menu li:first-child {
-    display: none;
-  }
-
   .header__button svg {
     display: none;
   }
@@ -2813,6 +2805,10 @@ body.no-scroll {
 
   .header__search {
     order: -1;
+  }
+
+  .header__menu li:first-child {
+    border-top: 1px solid rgba(20, 8, 4, 0.2);
   }
 
   .header__menu li {

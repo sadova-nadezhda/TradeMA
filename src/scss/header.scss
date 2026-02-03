@@ -178,9 +178,8 @@
     font-weight: 500;
     li {
       &:first-child {
-        border-top: 1px solid rgba(20, 8, 4, 0.2);
-        @media(min-width: 1025px) {
-          display: none;
+        @media(max-width: 1024px) {
+          border-top: 1px solid rgba(20, 8, 4, 0.2);
         }
       }
       @media(max-width: 1024px) {
