@@ -291,12 +291,42 @@
   &-partners {
     padding: calc(60 * var(--width-multiplier)) 0;
     background-color: var(--white, $white);
-    &__slider {
-      .swiper {
-        overflow: visible;
+    .marquee {
+      animation: scroll 20s linear infinite;
+    }
+    &__wrap {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      user-select: none;
+      gap: calc(80 * var(--width-multiplier));
+      &:hover {
+        .marquee {
+          animation-play-state: paused;
+        }
+      }
+      @media(max-width: 1024px) {
+        gap: calc(60 * var(--width-multiplier));
+      }
+      @media(max-width: 767px) {
+        gap: calc(40 * var(--width-multiplier));
       }
     }
-    &__img {
+    &__items {
+      flex-shrink: 0;
+      display: flex;
+      gap: calc(80 * var(--width-multiplier));
+      counter-reset: item;
+      justify-content: space-around;
+      min-width: 100%;
+      @media(max-width: 1024px) {
+        gap: calc(60 * var(--width-multiplier));
+      }
+      @media(max-width: 767px) {
+        gap: calc(40 * var(--width-multiplier));
+      }
+    }
+    &__item {
       width: auto;
       height: calc(80 * var(--width-multiplier));
       img {
@@ -304,8 +334,11 @@
         height: 100%;
         object-fit: contain;
       }
-      @media(max-width: 767px) {
+      @media(max-width: 1024px) {
         height: calc(60 * var(--width-multiplier));
+      }
+      @media(max-width: 767px) {
+        height: calc(40 * var(--width-multiplier));
       }
     }
     @media(max-width: 767px) {
@@ -2199,5 +2232,14 @@
         margin-top: calc(20 * var(--width-multiplier));
       }
     }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
   }
 }

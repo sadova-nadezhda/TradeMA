@@ -141,21 +141,35 @@
     @media(max-width: 1024px) {
       position: absolute;
       left: -100%;
-      top: calc(100% + calc(6 * var(--width-multiplier)));
-      width: 100%;
-      max-width: calc(100% - calc(32 * var(--width-multiplier)));
-      min-height: calc(100vh - calc(120 * var(--width-multiplier)));
-      padding: calc(20 * var(--width-multiplier)) calc(16 * var(--width-multiplier));
-      background: var(--light, $light);
+      top: 0;
+      min-height: 100vh;
+      min-width: 320px;
+      padding: calc(40 * var(--width-multiplier)) calc(16 * var(--width-multiplier));
+      padding-top: calc(120 * var(--width-multiplier));
+      background-color: var(--light, $light);
     }
   }
   &.mega-open {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: calc(100 * var(--width-multiplier));
+      background-color: var(--light, $light);
+      z-index: 1;
+      @media(min-width: 1025px) {
+        content: none;
+      }
+    }
     .header__mega {
       @media(min-width: 1025px) {
         max-height: calc(550 * var(--width-multiplier));
       }
       @media(max-width: 1024px) {
-        left: calc(16 * var(--width-multiplier));
+        left: 0;
       }
     }
   }
