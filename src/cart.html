@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Ваша корзина" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="cart section-top section-hidden">
+        <div class="container">
+          <div class="cart__container">
+            <div class="cart__wrap">
+              <div class="cart__left">
+                <h1 class="cart__title indent-bottom">Ваша корзина</h1>
+                <div class="cart__table cart-table">
+                  <div class="cart-table__row">
+                    <div class="cart-table__img"><img src="@img/product-1.png" alt=""></div>
+                    <div class="cart-table__content">
+                      <div class="cart-table__group">
+                        <div class="cart-table__category">Сварочное оборудование</div>
+                        <div class="cart-table__caption">Машина бетоноотделочная ALTECO SE 100</div>
+                        <div class="cart-table__colors">
+                          <span>Бирюзовый</span>
+                        </div>
+                      </div>
+                      <div class="cart-table__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="cart-table__quanty">
+                        <button>-</button>
+                        <input type="number" value="1">
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-table__row">
+                    <div class="cart-table__img"><img src="@img/product-2.png" alt=""></div>
+                    <div class="cart-table__content">
+                      <div class="cart-table__group">
+                        <div class="cart-table__category">Сварочное оборудование</div>
+                        <div class="cart-table__caption">Бетоносмеситель ALTECO БС 180 С</div>
+                        <div class="cart-table__colors">
+                          <span>Бирюзовый</span>
+                        </div>
+                      </div>
+                      <div class="cart-table__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="cart-table__quanty">
+                        <button>-</button>
+                        <input type="number" value="1">
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-table__row">
+                    <div class="cart-table__img"><img src="@img/product-3.png" alt=""></div>
+                    <div class="cart-table__content">
+                      <div class="cart-table__group">
+                        <div class="cart-table__category">Сварочное оборудование</div>
+                        <div class="cart-table__caption">Инверторный бензиновый сварочный генератор STALKER GWG 200 Ai</div>
+                        <div class="cart-table__colors">
+                          <span>Бирюзовый</span>
+                        </div>
+                      </div>
+                      <div class="cart-table__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="cart-table__quanty cart-qty">
+                        <button class="cart-qty__btn button">-</button>
+                        <input type="number" value="1">
+                        <button class="cart-qty__btn button">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__total cart-total">
+                <h2 class="cart__title indent-bottom">Сумма заказов</h2>
+                <div class="cart-total__box indent-bottom">
+                  <div class="cart-total__subtotal cart-total__item">
+                    <span>Подытог</span>
+                    <span>22 340 ₸</span>
+                  </div>
+                  <div class="cart-total__sale cart-total__item">
+                    <span>Скидка</span>
+                    <span>-1 000 ₸</span>
+                  </div>
+                  <div class="cart-total__sum cart-total__item">
+                    <span>Итог</span>
+                    <span>21 340 ₸</span>
+                  </div>
+                </div>
+                <div class="cart-total__buttons">
+                  <a href="order.html" class="cart-total__button button button-primary text-up">оформить заказ</a>
+                  <a href="catalog.html" class="cart-total__button button button-stroke text-up">продолжить покупки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-products view-products section-hidden">
+        <div class="container">
+          <div class="main-products__container">
+            <div class="main-products__heading heading indent-bottom">
+              <h2 class="main-products__title">Вы смотрели</h2>
+              <div class="main-products__arrows arrows">
+                <div class="swiper-arrow arrow-prev products-prev">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.80481 0.155151C6.99529 -0.0444999 7.31198 -0.0527672 7.51184 0.137573C7.71164 0.32792 7.71855 0.644641 7.52844 0.844604L1.66711 6.99988H20.5001C20.776 7.00008 21 7.22398 21.0001 7.49988C21.0001 7.7759 20.7761 7.99968 20.5001 7.99988H1.66711L7.52844 14.1552C7.71874 14.355 7.71147 14.6717 7.51184 14.8622C7.31189 15.0526 6.99526 15.0445 6.80481 14.8446L0.137817 7.8446C-0.0458737 7.65155 -0.0458737 7.34821 0.137817 7.15515L6.80481 0.155151Z" fill="#C23001"/>
+                  </svg>
+                </div>
+                <div class="swiper-arrow arrow-next products-next">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4883 0.137573C13.6883 -0.0525514 14.005 -0.0447054 14.1953 0.155151L20.8623 7.15515C21.0459 7.3481 21.0457 7.65155 20.8623 7.8446L14.1953 14.8446C14.0049 15.0445 13.6882 15.0526 13.4883 14.8622C13.2883 14.6717 13.2812 14.3551 13.4717 14.1552L19.333 7.99988H0.5C0.223858 7.99988 0 7.77602 0 7.49988C0.000143974 7.22386 0.223946 6.99988 0.5 6.99988H19.333L13.4717 0.844604C13.2812 0.644639 13.2883 0.328016 13.4883 0.137573Z" fill="#FFFAF8"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="main-products__slider">
+              <div class="swiper productsSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-1.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-green">В наличии</div>
+                      <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-2.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-orange">Под заказ</div>
+                      <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-1.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-green">В наличии</div>
+                      <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-2.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-orange">Под заказ</div>
+                      <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-1.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-green">В наличии</div>
+                      <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-2.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-orange">Под заказ</div>
+                      <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

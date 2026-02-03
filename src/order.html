@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Оформление заказа" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="order section-top section-pad-bottom">
+        <div class="container">
+          <div class="order__container">
+            <div class="order__wrap">
+              <div class="order__left">
+                <div class="order__group indent-bottom">
+                  <h1 class="order__title">Оформление заказа</h1>
+                  <div class="order__txt">Для оформления заказа заполните все обязательные поля</div>
+                </div>
+                <div class="order__form form">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" placeholder="Имя">
+                      <input type="tel" placeholder="Номер телефона">
+                      <input type="text" placeholder="Наименование компании">
+                      <input type="email" placeholder="E-mail">
+                      <select name="country">
+                        <option value="">Страна</option>
+                        <option value="">Казахстан</option>
+                        <option value="">Россия</option>
+                      </select>
+                      <select name="city">
+                        <option value="">Город</option>
+                        <option value="">Астана</option>
+                        <option value="">Москва</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="form-button button button-primary text-up">оформить заказ</button>
+                  </form>
+                </div>
+              </div>
+              <div class="order__right">
+                <div class="order__total order-total">
+                  <div class="order-total__box">
+                    <h2 class="order__caption indent-bottom">Ваша корзина</h2>
+                    <div class="order-total__cart">
+                      <div class="order-total__col">
+                        <div class="cart-table__row">
+                          <button class="cart-table__remove">
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3368 7.77817C23.7269 8.16862 23.7269 8.80194 23.3368 9.19239L16.9728 15.5563L23.3368 21.9203C23.7269 22.3108 23.7269 22.9441 23.3368 23.3345C22.9463 23.7249 22.3131 23.7247 21.9226 23.3345L15.5586 16.9706L9.19463 23.3345C8.80421 23.7249 8.17097 23.7247 7.78042 23.3345C7.38989 22.944 7.3899 22.3108 7.78042 21.9203L14.1444 15.5563L7.78042 9.19239C7.38989 8.80186 7.38989 8.1687 7.78042 7.77817C8.17097 7.38797 8.80421 7.38776 9.19463 7.77817L15.5586 14.1421L21.9226 7.77817C22.3131 7.38796 22.9463 7.38775 23.3368 7.77817Z" fill="#4C4C4C"/>
+                            </svg>
+                          </button>
+                          <div class="cart-table__img"><img src="@img/product-1.png" alt=""></div>
+                          <div class="cart-table__content">
+                            <div class="cart-table__group">
+                              <div class="cart-table__category">Сварочное оборудование</div>
+                              <div class="cart-table__caption">Машина бетоноотделочная ALTECO SE 100</div>
+                              <div class="cart-table__colors">
+                                <span>Бирюзовый</span>
+                              </div>
+                            </div>
+                            <div class="cart-table__price">
+                              <div class="price">21 340 ₸</div>
+                              <div class="old-price">22 340 ₸</div>
+                            </div>
+                            <div class="cart-table__quanty">
+                              <button>-</button>
+                              <input type="number" value="1">
+                              <button>+</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-table__row">
+                          <button class="cart-table__remove">
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3368 7.77817C23.7269 8.16862 23.7269 8.80194 23.3368 9.19239L16.9728 15.5563L23.3368 21.9203C23.7269 22.3108 23.7269 22.9441 23.3368 23.3345C22.9463 23.7249 22.3131 23.7247 21.9226 23.3345L15.5586 16.9706L9.19463 23.3345C8.80421 23.7249 8.17097 23.7247 7.78042 23.3345C7.38989 22.944 7.3899 22.3108 7.78042 21.9203L14.1444 15.5563L7.78042 9.19239C7.38989 8.80186 7.38989 8.1687 7.78042 7.77817C8.17097 7.38797 8.80421 7.38776 9.19463 7.77817L15.5586 14.1421L21.9226 7.77817C22.3131 7.38796 22.9463 7.38775 23.3368 7.77817Z" fill="#4C4C4C"/>
+                            </svg>
+                          </button>
+                          <div class="cart-table__img"><img src="@img/product-2.png" alt=""></div>
+                          <div class="cart-table__content">
+                            <div class="cart-table__group">
+                              <div class="cart-table__category">Сварочное оборудование</div>
+                              <div class="cart-table__caption">Бетоносмеситель ALTECO БС 180 С</div>
+                              <div class="cart-table__colors">
+                                <span>Бирюзовый</span>
+                              </div>
+                            </div>
+                            <div class="cart-table__price">
+                              <div class="price">21 340 ₸</div>
+                              <div class="old-price">22 340 ₸</div>
+                            </div>
+                            <div class="cart-table__quanty">
+                              <button>-</button>
+                              <input type="number" value="1">
+                              <button>+</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-table__row">
+                          <button class="cart-table__remove">
+                            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3368 7.77817C23.7269 8.16862 23.7269 8.80194 23.3368 9.19239L16.9728 15.5563L23.3368 21.9203C23.7269 22.3108 23.7269 22.9441 23.3368 23.3345C22.9463 23.7249 22.3131 23.7247 21.9226 23.3345L15.5586 16.9706L9.19463 23.3345C8.80421 23.7249 8.17097 23.7247 7.78042 23.3345C7.38989 22.944 7.3899 22.3108 7.78042 21.9203L14.1444 15.5563L7.78042 9.19239C7.38989 8.80186 7.38989 8.1687 7.78042 7.77817C8.17097 7.38797 8.80421 7.38776 9.19463 7.77817L15.5586 14.1421L21.9226 7.77817C22.3131 7.38796 22.9463 7.38775 23.3368 7.77817Z" fill="#4C4C4C"/>
+                            </svg>
+                          </button>
+                          <div class="cart-table__img"><img src="@img/product-3.png" alt=""></div>
+                          <div class="cart-table__content">
+                            <div class="cart-table__group">
+                              <div class="cart-table__category">Сварочное оборудование</div>
+                              <div class="cart-table__caption">Инверторный бензиновый сварочный генератор STALKER GWG 200 Ai</div>
+                              <div class="cart-table__colors">
+                                <span>Бирюзовый</span>
+                              </div>
+                            </div>
+                            <div class="cart-table__price">
+                              <div class="price">21 340 ₸</div>
+                              <div class="old-price">22 340 ₸</div>
+                            </div>
+                            <div class="cart-table__quanty cart-qty">
+                              <button class="cart-qty__btn button">-</button>
+                              <input type="number" value="1">
+                              <button class="cart-qty__btn button">+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-total__group">
+                    <div class="order-total__subtotal cart-total__subtotal cart-total__item">
+                      <span>Подытог</span>
+                      <span>22 340 ₸</span>
+                    </div>
+                    <div class="order-total__sale cart-total__sale cart-total__item">
+                      <span>Скидка</span>
+                      <span>-1 000 ₸</span>
+                    </div>
+                    <div class="order-total__sum cart-total__sum cart-total__item">
+                      <span>Итог</span>
+                      <span>21 340 ₸</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Каталог" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="catalog section-top section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="catalog__container">
+            <h1 class="catalog__title indent-bottom">Каталог</h1>
+            <div class="catalog__cards">
+              <a href="" class="catalog__card catalog-card">
+                <div class="catalog-card__caption">Сварочное оборудование</div>
+                <div class="catalog-card__img"><img src="@img/catalog-1.png" alt=""></div>
+              </a>
+              <a href="" class="catalog__card catalog-card">
+                <div class="catalog-card__caption">Генераторы</div>
+                <div class="catalog-card__img"><img src="@img/catalog-3.png" alt=""></div>
+              </a>
+              <a href="" class="catalog__card catalog-card">
+                <div class="catalog-card__caption">Измерительные приборы и инструменты</div>
+                <div class="catalog-card__img"><img src="@img/catalog-2.png" alt=""></div>
+              </a>
+              <a href="" class="catalog__card catalog-card">
+                <div class="catalog-card__caption">Строительное оборудование и техника</div>
+                <div class="catalog-card__img"><img src="@img/catalog-4.png" alt=""></div>
+              </a>
+              <a href="" class="catalog__card catalog-card">
+                <div class="catalog-card__caption">Компрессоры</div>
+                <div class="catalog-card__img"><img src="@img/catalog-5.png" alt=""></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

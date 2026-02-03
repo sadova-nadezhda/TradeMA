@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Результаты поиска</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css?_v=20260203105840" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/css/tabby-ui.min.css?_v=20260203105840">
+  <link rel="stylesheet" href="css/style.css?_v=20260203105840" />
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="/" class="header__logo">
+        <img src="img/logo.svg" alt="" />
+      </a>
+      <nav class="header__nav">
+        <div class="header__catalog button button-grey">
+          <div class="header__catalog-icons">
+            <span class="header__catalog-ico header__catalog-ico--open">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2001_1428)">
+                <path d="M0 2.08333V9.16667H9.16667V0H2.08333C0.935 0 0 0.935 0 2.08333ZM8.33333 8.33333H0.833333V2.08333C0.833333 1.39417 1.39417 0.833333 2.08333 0.833333H8.33333V8.33333ZM17.9167 0H10.8333V9.16667H20V2.08333C20 0.935 19.065 0 17.9167 0ZM19.1667 8.33333H11.6667V0.833333H17.9167C18.6058 0.833333 19.1667 1.39417 19.1667 2.08333V8.33333ZM0 17.9167C0 19.065 0.935 20 2.08333 20H9.16667V10.8333H0V17.9167ZM0.833333 11.6667H8.33333V19.1667H2.08333C1.39417 19.1667 0.833333 18.6058 0.833333 17.9167V11.6667ZM10.8333 20H17.9167C19.065 20 20 19.065 20 17.9167V10.8333H10.8333V20ZM11.6667 11.6667H19.1667V17.9167C19.1667 18.6058 18.6058 19.1667 17.9167 19.1667H11.6667V11.6667Z" fill="#FFFAF8"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_2001_1428">
+                <rect width="20" height="20" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span class="header__catalog-ico header__catalog-ico--close" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.7096 2.79044C18.0724 3.15326 18.0954 3.72758 17.778 4.11689L17.7096 4.19218L11.4017 10.5L17.7096 16.8078L17.778 16.8831C18.0954 17.2724 18.0724 17.8467 17.7096 18.2096C17.3467 18.5724 16.7724 18.5954 16.3831 18.278L16.3078 18.2096L9.99993 11.9017L3.69206 18.2096C3.30498 18.5966 2.67739 18.5966 2.29031 18.2096C1.90323 17.8225 1.90323 17.1949 2.29031 16.8078L8.59819 10.5L2.29031 4.19218C1.90323 3.8051 1.90323 3.17752 2.29031 2.79044C2.67739 2.40336 3.30498 2.40336 3.69206 2.79044L9.99993 9.09826L16.3078 2.79044L16.3831 2.722C16.7724 2.40464 17.3467 2.42762 17.7096 2.79044Z" fill="#FFFAF8"/>
+              </svg>
+            </span>
+          </div>
+          <span class="header__catalog-text">Каталог</span>
+        </div>
+        <div class="header__search search">
+          <input type="search" placeholder="Поиск товаров">
+        </div>
+        <ul class="header__menu">
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="news.html">Новости</a></li>
+        </ul>
+        <a class="header__tel" href="tel:+7 777 777 77 77">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_1441)">
+            <path d="M1.45833 1.46474L2.39167 0.647984C3.24166 -0.202104 4.68333 -0.243775 5.6 0.689655L7.15833 2.73153C8.03333 3.60663 8.03333 5.03177 7.15833 5.89853L5.91666 7.17366C7.26666 10.3407 9.75833 12.8409 12.825 14.0911L14.1 12.8493C14.525 12.4242 15.0833 12.1909 15.6833 12.1909C16.2833 12.1909 16.8417 12.4242 17.225 12.8159L19.3417 14.4494C20.2167 15.3245 20.2167 16.7497 19.3583 17.5997L18.5083 18.5749C17.5917 19.4916 16.3583 20 15.0167 20C8.55833 20 0 11.4324 0 4.98177C0 3.6483 0.508333 2.4065 1.44167 1.47307L1.45833 1.46474ZM15.0333 19.1582C16.15 19.1582 17.175 18.7415 17.9167 17.9998L18.7667 17.0164C19.3167 16.4663 19.3167 15.5745 18.8083 15.0578L16.6917 13.4243C16.425 13.1576 16.075 13.0076 15.6917 13.0076C15.3083 13.0076 14.9583 13.1576 14.6917 13.4243L13.2167 14.8661C13.1 14.9828 12.9333 15.0161 12.775 14.9578C9.29999 13.6327 6.475 10.8074 5.03333 7.22367C4.975 7.07365 5.00833 6.89864 5.125 6.77362L6.56666 5.29847C7.11666 4.74841 7.11666 3.85665 6.53333 3.26492L4.975 1.22304C4.425 0.672987 3.53333 0.672987 2.95833 1.23971L2.025 2.05646C1.26667 2.81488 0.85 3.83998 0.85 4.95677C0.85 10.9241 9.06666 19.1416 15.0333 19.1416V19.1582Z" fill="#C23001"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_2001_1441">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <span>+7 777 777 77 77</span>
+        </a>
+        <div class="header__socials">
+          <a href="" class="header__social" target="_blank">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_151_4864)">
+              <path d="M19.4199 0C22.4998 5.42526e-05 25 2.50514 25 5.58008V19.4199C24.9999 22.4998 22.4998 24.9999 19.4199 25H5.58008C2.50514 25 5.42511e-05 22.4998 0 19.4199V5.58008C0 2.50511 2.50511 0 5.58008 0H19.4199ZM12.5 4.40527C8.03504 4.40527 4.40039 8.03504 4.40039 12.5C4.40045 16.9649 8.03508 20.5996 12.5 20.5996C16.9649 20.5995 20.5995 16.9649 20.5996 12.5C20.5996 8.03508 16.9649 4.40534 12.5 4.40527ZM12.4971 6.875C15.599 6.87524 18.125 9.39511 18.125 12.4971C18.1248 15.5988 15.5988 18.1248 12.4971 18.125C9.39511 18.125 6.87524 15.599 6.875 12.4971C6.875 9.39497 9.39497 6.875 12.4971 6.875ZM20.7695 2.4502C19.8247 2.45035 19.0547 3.22014 19.0547 4.16504C19.0547 5.1099 19.8247 5.87485 20.7695 5.875C21.7145 5.875 22.4843 5.10999 22.4844 4.16504C22.4844 3.22005 21.7145 2.4502 20.7695 2.4502Z" fill="#C23001"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_151_4864">
+              <rect width="25" height="25" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="" class="header__social" target="_blank">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5029 0C19.3951 0 25 5.60781 25 12.5C25 19.3922 19.3951 25 12.5029 25C9.96097 25 7.60339 24.2438 5.62695 22.9346L0.822266 24.4707L2.37988 19.8262C0.881517 17.7684 0 15.2343 0 12.5C0 5.60625 5.60488 0 12.4971 0H12.5029ZM7.79395 5.7168C7.31582 5.7168 6.81719 5.8582 6.51562 6.16602C6.14831 6.54113 5.2373 7.41458 5.2373 9.20801C5.2374 11.0017 6.54512 12.7363 6.72168 12.9785C6.90693 13.2221 9.27273 16.953 12.9453 18.4746C15.8168 19.6651 16.6702 19.5551 17.3232 19.416C18.2779 19.2098 19.4748 18.5029 19.7764 17.6514C20.0779 16.7983 20.0777 16.0717 19.9902 15.917C19.901 15.7625 19.6589 15.6745 19.292 15.4902C18.9241 15.3071 17.1394 14.4249 16.8018 14.3076C16.4705 14.1826 16.1543 14.227 15.9043 14.5801C15.5528 15.0721 15.2073 15.5716 14.9277 15.873C14.7074 16.1074 14.3484 16.1377 14.0469 16.0127C13.6422 15.8439 12.5105 15.4473 11.1152 14.2051C10.0343 13.2429 9.30063 12.0443 9.08789 11.6846C8.87539 11.3174 9.06563 11.1047 9.23438 10.9062C9.41875 10.6781 9.59395 10.5152 9.77832 10.3027C9.96252 10.0904 10.0655 9.97937 10.1826 9.72949C10.3076 9.48733 10.2189 9.23709 10.1299 9.05273C10.0419 8.86703 9.3073 7.07489 9.00586 6.34863C8.76376 5.76916 8.57981 5.74707 8.21289 5.73145C8.08794 5.7252 7.94855 5.7168 7.79395 5.7168Z" fill="#C23001"/>
+            </svg>
+          </a>
+          <a href="" class="header__social" target="_blank">
+            <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_151_4872)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.7024 0.866339C13.1018 -0.288128 22.6095 -0.288128 32.012 0.866339C33.5539 1.06486 35.0276 2.54661 35.2151 4.09192C35.8789 9.75521 35.8789 15.2469 35.2151 20.9083C35.0276 22.4536 33.5539 23.9371 32.012 24.1339C22.6099 25.2884 13.1018 25.2884 3.7024 24.1339C2.1592 23.9368 0.685762 22.4536 0.4983 20.9083C-0.165448 15.2463 -0.16545 9.75524 0.4983 4.09192C0.685762 2.54661 2.1592 1.06442 3.7024 0.866339ZM14.8801 18.3829L23.8088 12.5011L14.8801 6.61927V18.3829Z" fill="#C23001"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_151_4872">
+              <rect width="36" height="25.0002" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div class="header__group">
+        <a href="cart.html" class="header__cart button button-primary button-cart">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+          </svg>
+        </a>
+        <a href="" class="header__button button button-grey text-up">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_153_2845)">
+              <path d="M1.45833 1.46474L2.39167 0.647984C3.24166 -0.202104 4.68333 -0.243775 5.6 0.689655L7.15833 2.73153C8.03333 3.60663 8.03333 5.03177 7.15833 5.89853L5.91666 7.17366C7.26666 10.3407 9.75833 12.8409 12.825 14.0911L14.1 12.8493C14.525 12.4242 15.0833 12.1909 15.6833 12.1909C16.2833 12.1909 16.8417 12.4242 17.225 12.8159L19.3417 14.4494C20.2167 15.3245 20.2167 16.7497 19.3583 17.5997L18.5083 18.5749C17.5917 19.4916 16.3583 20 15.0167 20C8.55833 20 0 11.4324 0 4.98177C0 3.6483 0.508333 2.4065 1.44167 1.47307L1.45833 1.46474ZM15.0333 19.1582C16.15 19.1582 17.175 18.7415 17.9167 17.9998L18.7667 17.0164C19.3167 16.4663 19.3167 15.5745 18.8083 15.0578L16.6917 13.4243C16.425 13.1576 16.075 13.0076 15.6917 13.0076C15.3083 13.0076 14.9583 13.1576 14.6917 13.4243L13.2167 14.8661C13.1 14.9828 12.9333 15.0161 12.775 14.9578C9.29999 13.6327 6.475 10.8074 5.03333 7.22367C4.975 7.07365 5.00833 6.89864 5.125 6.77362L6.56666 5.29847C7.11666 4.74841 7.11666 3.85665 6.53333 3.26492L4.975 1.22304C4.425 0.672987 3.53333 0.672987 2.95833 1.23971L2.025 2.05646C1.26667 2.81488 0.85 3.83998 0.85 4.95677C0.85 10.9241 9.06666 19.1416 15.0333 19.1416V19.1582Z" fill="#FFFAF8"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_153_2845">
+                <rect width="20" height="20" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span>Заказать звонок</span>
+        </a>
+      </div>
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="header__mega mega-menu" id="megaMenu" aria-hidden="true" data-lenis-prevent>
+      <div class="mega-menu__inner">
+        <div class="mega-menu__grid">
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-1.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Сварочное оборудование</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-3.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Генераторы</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-2.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Измерительные приборы и инструменты</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-1.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Сварочное оборудование</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-3.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Генераторы</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-2.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Измерительные приборы и инструменты</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-2.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Измерительные приборы и инструменты</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-1.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Сварочное оборудование</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-3.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Генераторы</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+          <div class="mega-menu__item">
+            <div class="mega-menu__icon">
+              <img src="img/catalog-2.png" alt="">
+            </div>
+            <div class="mega-menu__content">
+              <div class="mega-menu__title">Измерительные приборы и инструменты</div>
+              <ul class="mega-menu__list">
+                <li><a href="#">Инверторные сварочные аппараты MMA</a></li>
+                <li><a href="#">Аппараты точечной сварки</a></li>
+                <li><a href="#">Газосварочное оборудование</a></li>
+              </ul>
+              <button class="mega-menu__more" type="button" aria-expanded="false">
+                Показать еще
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="search-page section-top section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="search-page__container">
+            <h1 class="search-page__title indent-bottom">Результаты поиска</h1>
+            <div class="search-page__top">
+              <h2 class="search-page__caption">Бетоносмеситель</h2>
+              <span class="color-grey">Найдено: 200 товаров</span>
+            </div>
+            <div class="search-page__cards">
+              <div class="search-page__card product-card">
+                <a class="product-card__img" href=""><img src="img/product-1.png" alt=""></a>
+                <div class="product-card__content">
+                  <div class="product-card__stock accents-green">В наличии</div>
+                  <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                  <div class="product-card__price">
+                    <div class="price">21 340 ₸</div>
+                    <div class="old-price">22 340 ₸</div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                      <span>подробнее</span>
+                    </a>
+                    <a href="" class="product-card__button product-card__order button button-primary text-up">
+                      <span>заказать</span>
+                    </a>
+                    <a href="" class="product-card__cart button button-primary button-cart">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="search-page__card product-card">
+                <a class="product-card__img" href=""><img src="img/product-2.png" alt=""></a>
+                <div class="product-card__content">
+                  <div class="product-card__stock accents-orange">Под заказ</div>
+                  <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                  <div class="product-card__price">
+                    <div class="price">21 340 ₸</div>
+                    <div class="old-price">22 340 ₸</div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                      <span>подробнее</span>
+                    </a>
+                    <a href="" class="product-card__button product-card__order button button-primary text-up">
+                      <span>заказать</span>
+                    </a>
+                    <a href="" class="product-card__cart button button-primary button-cart">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="search-page__card product-card">
+                <a class="product-card__img" href=""><img src="img/product-1.png" alt=""></a>
+                <div class="product-card__content">
+                  <div class="product-card__stock accents-green">В наличии</div>
+                  <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                  <div class="product-card__price">
+                    <div class="price">21 340 ₸</div>
+                    <div class="old-price">22 340 ₸</div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                      <span>подробнее</span>
+                    </a>
+                    <a href="" class="product-card__button product-card__order button button-primary text-up">
+                      <span>заказать</span>
+                    </a>
+                    <a href="" class="product-card__cart button button-primary button-cart">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="search-page__card product-card">
+                <a class="product-card__img" href=""><img src="img/product-2.png" alt=""></a>
+                <div class="product-card__content">
+                  <div class="product-card__stock accents-orange">Под заказ</div>
+                  <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                  <div class="product-card__price">
+                    <div class="price">21 340 ₸</div>
+                    <div class="old-price">22 340 ₸</div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                      <span>подробнее</span>
+                    </a>
+                    <a href="" class="product-card__button product-card__order button button-primary text-up">
+                      <span>заказать</span>
+                    </a>
+                    <a href="" class="product-card__cart button button-primary button-cart">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="search-page__card product-card">
+                <a class="product-card__img" href=""><img src="img/product-1.png" alt=""></a>
+                <div class="product-card__content">
+                  <div class="product-card__stock accents-green">В наличии</div>
+                  <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                  <div class="product-card__price">
+                    <div class="price">21 340 ₸</div>
+                    <div class="old-price">22 340 ₸</div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                      <span>подробнее</span>
+                    </a>
+                    <a href="" class="product-card__button product-card__order button button-primary text-up">
+                      <span>заказать</span>
+                    </a>
+                    <a href="" class="product-card__cart button button-primary button-cart">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="search-page__card product-card">
+                <a class="product-card__img" href=""><img src="img/product-2.png" alt=""></a>
+                <div class="product-card__content">
+                  <div class="product-card__stock accents-orange">Под заказ</div>
+                  <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                  <div class="product-card__price">
+                    <div class="price">21 340 ₸</div>
+                    <div class="old-price">22 340 ₸</div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                      <span>подробнее</span>
+                    </a>
+                    <a href="" class="product-card__button product-card__order button button-primary text-up">
+                      <span>заказать</span>
+                    </a>
+                    <a href="" class="product-card__cart button button-primary button-cart">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-page-pagination pagination">
+              <a href="" class="prev disabled">
+                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.80469 0.155273C6.99516 -0.0443778 7.31186 -0.0526451 7.51172 0.137695C7.71152 0.328042 7.71843 0.644763 7.52832 0.844727L1.66699 7H20.5C20.7759 7.0002 20.9999 7.2241 21 7.5C21 7.77602 20.776 7.9998 20.5 8H1.66699L7.52832 14.1553C7.71862 14.3551 7.71135 14.6718 7.51172 14.8623C7.31177 15.0527 6.99513 15.0446 6.80469 14.8447L0.137695 7.84473C-0.0459958 7.65167 -0.0459958 7.34833 0.137695 7.15527L6.80469 0.155273Z" fill="#4C4C4C"/>
+                </svg>
+              </a>
+              <a href="" class="active">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="" class="next">
+                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.4883 0.137695C13.6883 -0.0524293 14.005 -0.0445833 14.1953 0.155273L20.8623 7.15527C21.0459 7.34822 21.0457 7.65167 20.8623 7.84473L14.1953 14.8447C14.0049 15.0447 13.6882 15.0527 13.4883 14.8623C13.2883 14.6719 13.2812 14.3552 13.4717 14.1553L19.333 8H0.5C0.223858 8 0 7.77614 0 7.5C0.000143974 7.22398 0.223946 7 0.5 7H19.333L13.4717 0.844727C13.2812 0.644761 13.2883 0.328138 13.4883 0.137695Z" fill="#4C4C4C"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <div class="footer__row">
+        <a href="/" class="footer__logo"><img src="img/footer-logo.svg" alt=""></a>
+        <div class="footer__wrap">
+          <div class="footer__group">
+            <div class="footer__caption text-up">Навигация</div>
+            <ul class="footer__menu">
+              <li><a href="/">Главная</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+            </ul>
+          </div>
+          <div class="footer__group">
+            <div class="footer__caption text-up">Информация</div>
+            <ul class="footer__menu">
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="about.html#faq">Частые вопросы</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__group">
+              <div class="footer__caption text-up">контакты</div>
+              <ul class="footer__menu">
+                <li><a href="mailto:trademagroup@mail.ru">trademagroup@mail.ru</a></li>
+                <li><a href="tel:+7 777 777 77 77">+7 777 777 77 77</a></li>
+              </ul>
+            </div>
+            <div class="footer__group">
+              <div class="footer__caption text-up">Адрес</div>
+              <div class="footer__address">Казахстан, 010000, г. Астана ​пр. Абая, 10, офис 55</div>
+            </div>
+            <div class="footer__socials">
+              <a href="" class="footer__social" target="_blank">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_220_1239)">
+                  <path d="M19.4199 0C22.4998 5.42526e-05 25 2.50514 25 5.58008V19.4199C24.9999 22.4998 22.4998 24.9999 19.4199 25H5.58008C2.50514 25 5.42511e-05 22.4998 0 19.4199V5.58008C0 2.50511 2.50511 0 5.58008 0H19.4199ZM12.5 4.40527C8.03504 4.40527 4.40039 8.03504 4.40039 12.5C4.40045 16.9649 8.03508 20.5996 12.5 20.5996C16.9649 20.5995 20.5995 16.9649 20.5996 12.5C20.5996 8.03508 16.9649 4.40534 12.5 4.40527ZM12.4971 6.875C15.599 6.87524 18.125 9.39511 18.125 12.4971C18.1248 15.5988 15.5988 18.1248 12.4971 18.125C9.39511 18.125 6.87524 15.599 6.875 12.4971C6.875 9.39497 9.39497 6.875 12.4971 6.875ZM20.7695 2.4502C19.8247 2.45035 19.0547 3.22014 19.0547 4.16504C19.0547 5.1099 19.8247 5.87485 20.7695 5.875C21.7145 5.875 22.4843 5.10999 22.4844 4.16504C22.4844 3.22005 21.7145 2.4502 20.7695 2.4502Z" fill="#EDEAE8"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_220_1239">
+                  <rect width="25" height="25" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="" class="footer__social" target="_blank">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5029 0C19.3951 0 25 5.60781 25 12.5C25 19.3922 19.3951 25 12.5029 25C9.96097 25 7.60339 24.2438 5.62695 22.9346L0.822266 24.4707L2.37988 19.8262C0.881517 17.7684 0 15.2343 0 12.5C0 5.60625 5.60488 0 12.4971 0H12.5029ZM7.79395 5.7168C7.31582 5.7168 6.81719 5.8582 6.51562 6.16602C6.14831 6.54113 5.2373 7.41458 5.2373 9.20801C5.2374 11.0017 6.54512 12.7363 6.72168 12.9785C6.90693 13.2221 9.27273 16.953 12.9453 18.4746C15.8168 19.6651 16.6702 19.5551 17.3232 19.416C18.2779 19.2098 19.4748 18.5029 19.7764 17.6514C20.0779 16.7983 20.0777 16.0717 19.9902 15.917C19.901 15.7625 19.6589 15.6745 19.292 15.4902C18.9242 15.3071 17.1394 14.4249 16.8018 14.3076C16.4705 14.1826 16.1543 14.227 15.9043 14.5801C15.5528 15.0721 15.2073 15.5716 14.9277 15.873C14.7074 16.1074 14.3484 16.1377 14.0469 16.0127C13.6422 15.8439 12.5105 15.4473 11.1152 14.2051C10.0343 13.2429 9.30063 12.0443 9.08789 11.6846C8.87539 11.3174 9.06563 11.1047 9.23438 10.9062C9.41875 10.6781 9.59395 10.5152 9.77832 10.3027C9.96252 10.0904 10.0655 9.97937 10.1826 9.72949C10.3076 9.48733 10.2189 9.23709 10.1299 9.05273C10.0419 8.86703 9.3073 7.07489 9.00586 6.34863C8.76376 5.76916 8.57981 5.74707 8.21289 5.73145C8.08794 5.7252 7.94855 5.7168 7.79395 5.7168Z" fill="#EDEAE8"/>
+                </svg>
+              </a>
+              <a href="" class="footer__social" target="_blank">
+                <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_220_1247)">
+                    <path d="M3.7024 0.866583C13.1018 -0.287884 22.6095 -0.287884 32.012 0.866583C33.5539 1.0651 35.0276 2.54686 35.2151 4.09217C35.8789 9.75546 35.8789 15.2471 35.2151 20.9086C35.0276 22.4539 33.5539 23.9374 32.012 24.1342C22.6099 25.2886 13.1018 25.2886 3.7024 24.1342C2.1592 23.937 0.685762 22.4539 0.4983 20.9086C-0.165448 15.2466 -0.16545 9.75548 0.4983 4.09217C0.685762 2.54686 2.1592 1.06467 3.7024 0.866583ZM14.8801 18.3832L23.8088 12.5013L14.8801 6.61951V18.3832Z" fill="#EDEAE8"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_220_1247">
+                      <rect width="36" height="25.0002" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__group footer__catalog">
+          <div class="footer__caption text-up">категории товаров</div>
+          <ul class="footer__menu">
+            <li><a href="">Сварочное оборудование</a></li>
+            <li><a href="">Генераторы</a></li>
+            <li><a href="">Измерительные приборы и инструменты</a></li>
+            <li><a href="">Строительное оборудование и техника</a></li>
+            <li><a href="">Компрессоры</a></li>
+            <li><a href="">Электроинструменты</a></li>
+            <li><a href="">Станки</a></li>
+            <li><a href="">Лестницы, леса, вышки-туры</a></li>
+            <li><a href="">Строительные материалы</a></li>
+            <li><a href="">Техника для уборки</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <span>ТОО «Trade-m-a-group» © 2025</span>
+        <a href="">Политика конфиденциальности</a>
+        <a href="https://factum.agency/" class="footer__company" target="_blank">
+          <span>Сделано в</span>
+          <svg width="95" height="15" viewBox="0 0 95 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.39471 2.84289C7.54252 2.84289 6.94471 2.99252 6.60129 3.29177C6.27059 3.57855 6.10524 4.04613 6.10524 4.69451V14.7007H2.21315V4.88155C2.21315 3.84663 2.42938 2.96758 2.86183 2.24439C3.29429 1.50873 3.93025 0.953865 4.76972 0.5798C5.62191 0.193267 6.67125 0 7.91773 0C8.47738 0 8.97343 0.0374064 9.40589 0.112219C9.85106 0.187032 10.3217 0.293017 10.8177 0.430175V3.23566C10.4361 3.0985 10.0418 2.99875 9.63483 2.93641C9.24054 2.87406 8.82716 2.84289 8.39471 2.84289ZM0 7.72444V4.90025H10.5506V7.72444H0Z" fill="white"/>
+            <path d="M21.4302 14.7007L20.9342 10.8479L21.4493 9.37032L20.9342 7.89277L21.4302 4.0212H25.4749L24.7881 9.35162L25.4749 14.7007H21.4302ZM22.346 9.37032C22.1679 10.4925 21.8118 11.4776 21.2776 12.3254C20.7561 13.1733 20.0883 13.8342 19.2743 14.308C18.473 14.7693 17.5572 15 16.5269 15C15.4585 15 14.5173 14.7693 13.7033 14.308C12.9019 13.8342 12.2723 13.1733 11.8144 12.3254C11.3566 11.4651 11.1276 10.4801 11.1276 9.37032C11.1276 8.23566 11.3566 7.24439 11.8144 6.39651C12.2723 5.54863 12.9019 4.88778 13.7033 4.41396C14.5173 3.94015 15.4585 3.70324 16.5269 3.70324C17.5572 3.70324 18.473 3.94015 19.2743 4.41396C20.0883 4.87531 20.7624 5.52992 21.2966 6.3778C21.8309 7.21322 22.1806 8.21072 22.346 9.37032ZM15.0769 9.37032C15.0769 9.89402 15.185 10.3616 15.4013 10.7731C15.6302 11.1845 15.9418 11.5087 16.3361 11.7456C16.7304 11.9701 17.182 12.0823 17.6907 12.0823C18.2249 12.0823 18.7274 11.9701 19.198 11.7456C19.6686 11.5087 20.082 11.1845 20.4381 10.7731C20.7942 10.3616 21.0613 9.89402 21.2394 9.37032C21.0613 8.83416 20.7942 8.36035 20.4381 7.94888C20.082 7.53741 19.6686 7.21322 19.198 6.97631C18.7274 6.7394 18.2249 6.62095 17.6907 6.62095C17.182 6.62095 16.7304 6.7394 16.3361 6.97631C15.9418 7.21322 15.6302 7.53741 15.4013 7.94888C15.185 8.36035 15.0769 8.83416 15.0769 9.37032Z" fill="white"/>
+            <path d="M40.2475 10.1933C40.1457 11.1534 39.7896 11.995 39.1791 12.7182C38.5686 13.4414 37.7736 14.0025 36.7942 14.4015C35.8275 14.8005 34.7401 15 33.5317 15C32.1962 15 31.0197 14.7631 30.0021 14.2893C28.9846 13.8155 28.1896 13.1546 27.6173 12.3067C27.0449 11.4589 26.7587 10.4801 26.7587 9.37032C26.7587 8.24813 27.0449 7.26309 27.6173 6.41521C28.1896 5.56733 28.9846 4.90648 30.0021 4.43267C31.0197 3.94638 32.1962 3.70324 33.5317 3.70324C34.7401 3.70324 35.8275 3.90898 36.7942 4.32045C37.7736 4.71945 38.5686 5.28055 39.1791 6.00374C39.7896 6.71446 40.1457 7.55611 40.2475 8.52868H36.3745C36.2346 7.89277 35.9102 7.40648 35.4015 7.06982C34.8927 6.7207 34.2694 6.54613 33.5317 6.54613C32.9594 6.54613 32.4569 6.65835 32.0245 6.88279C31.6048 7.09476 31.2741 7.41272 31.0324 7.83666C30.8034 8.24813 30.689 8.75935 30.689 9.37032C30.689 9.96883 30.8034 10.48 31.0324 10.904C31.2741 11.3155 31.6048 11.6334 32.0245 11.8579C32.4569 12.0698 32.9594 12.1758 33.5317 12.1758C34.2694 12.1758 34.8927 11.995 35.4015 11.6334C35.9229 11.2718 36.2473 10.7918 36.3745 10.1933H40.2475Z" fill="white"/>
+            <path d="M40.6845 6.84539V5.1808L42.8977 4.30174L44.5766 1.1409H46.7898V4.0212H51.3687V6.84539H46.7898V9.98753C46.7898 10.7606 46.9487 11.303 47.2667 11.6147C47.5847 11.9264 48.1634 12.0823 49.0029 12.0823C49.5371 12.0823 50.0077 12.0387 50.4147 11.9514C50.8345 11.8516 51.2161 11.7269 51.5595 11.5773V14.4576C51.1779 14.5948 50.6755 14.7195 50.0522 14.8317C49.429 14.9439 48.7867 15 48.1253 15C46.917 15 45.9248 14.8192 45.149 14.4576C44.3858 14.096 43.8198 13.5786 43.451 12.9052C43.0821 12.2194 42.8977 11.4214 42.8977 10.5112V6.84539H40.6845Z" fill="white"/>
+            <path d="M57.8276 15C56.8101 15 55.9388 14.7943 55.2138 14.3828C54.5015 13.9713 53.9546 13.3915 53.573 12.6434C53.1915 11.8828 53.0007 10.9975 53.0007 9.98753V4.0212H56.8928V9.44514C56.8928 10.2307 57.0899 10.8354 57.4842 11.2594C57.8785 11.6833 58.4445 11.8953 59.1822 11.8953C59.7292 11.8953 60.1871 11.7893 60.5559 11.5773C60.9248 11.3529 61.211 11.0349 61.4145 10.6234C61.618 10.212 61.7197 9.71945 61.7197 9.14588L62.9217 9.76309C62.7818 10.8978 62.4638 11.8579 61.9678 12.6434C61.4844 13.4165 60.8866 14.0025 60.1743 14.4015C59.4621 14.8005 58.6798 15 57.8276 15ZM62.4256 14.7007L61.7197 10.4177V4.0212H65.6118V11.0162L66.3177 14.7007H62.4256Z" fill="white"/>
+            <path d="M67.4499 4.0212H71.3611L72.067 8.28554V14.7007H68.1749V7.70574L67.4499 4.0212ZM75.8256 3.70324C76.8304 3.70324 77.6826 3.90898 78.3821 4.32045C79.0817 4.73192 79.6159 5.31172 79.9848 6.05985C80.3536 6.80798 80.5381 7.69327 80.5381 8.71571V14.7007H76.646V9.27681C76.646 8.4788 76.4615 7.86783 76.0927 7.44389C75.7238 7.01995 75.1896 6.80798 74.49 6.80798C73.994 6.80798 73.5615 6.9202 73.1927 7.14464C72.8365 7.36908 72.5567 7.68703 72.3532 8.0985C72.1624 8.50997 72.067 8.99626 72.067 9.55736L70.8651 8.94015C71.0177 7.80549 71.3293 6.85162 71.7999 6.07855C72.2705 5.29302 72.8493 4.70075 73.5361 4.30174C74.2357 3.90274 74.9988 3.70324 75.8256 3.70324ZM84.2775 3.70324C85.2823 3.70324 86.1345 3.90898 86.8341 4.32045C87.5464 4.73192 88.0869 5.31172 88.4558 6.05985C88.8246 6.80798 89.0091 7.69327 89.0091 8.71571V14.7007H85.117V9.27681C85.117 8.4788 84.9325 7.86783 84.5637 7.44389C84.1948 7.01995 83.6606 6.80798 82.9611 6.80798C82.465 6.80798 82.0326 6.9202 81.6637 7.14464C81.3076 7.36908 81.0277 7.68703 80.8242 8.0985C80.6334 8.50997 80.5381 8.99626 80.5381 9.55736L79.3361 8.94015C79.4887 7.80549 79.794 6.85162 80.2519 6.07855C80.7225 5.29302 81.3076 4.70075 82.0071 4.30174C82.7067 3.90274 83.4635 3.70324 84.2775 3.70324Z" fill="white"/>
+            <path d="M92.8059 14.8878C92.3989 14.8878 92.0237 14.7943 91.6803 14.6072C91.3496 14.4202 91.0888 14.1646 90.898 13.8404C90.7073 13.5037 90.6119 13.1359 90.6119 12.7369C90.6119 12.3379 90.7073 11.9763 90.898 11.6521C91.0888 11.3279 91.3496 11.0723 91.6803 10.8853C92.0237 10.6858 92.3989 10.586 92.8059 10.586C93.2257 10.586 93.6009 10.6858 93.9316 10.8853C94.2623 11.0723 94.523 11.3279 94.7138 11.6521C94.9046 11.9763 95 12.3379 95 12.7369C95 13.1359 94.9046 13.5037 94.7138 13.8404C94.523 14.1646 94.2623 14.4202 93.9316 14.6072C93.6009 14.7943 93.2257 14.8878 92.8059 14.8878Z" fill="#FF6F00"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+    <script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js?_v=20260203105840"></script> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js?_v=20260203105840"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js?_v=20260203105840"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js?_v=20260203105840"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js?_v=20260203105840"></script>
+<script src="js/app.js?_v=20260203105840"></script>
+  </body>
+</html>

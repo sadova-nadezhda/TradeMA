@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Главная" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section class="hero section-top section-hidden">
+        <div class="container">
+          <div class="hero__container">
+            <div class="hero__slider">
+              <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                  <div class="hero__slide swiper-slide">
+                    <img src="@img/hero-img.jpg" alt="">
+                    <h1 class="hero__title">Оснащаем жилые комплексы строительным оборудованием под ключ</h1>
+                    <div class="hero__buttons">
+                      <a class="hero__button button button-grey text-up modal-btn" data-type="feedback"><span>Заказать звонок</span></a>
+                      <a class="hero__button button button-primary text-up"><span>Перейти в каталог</span></a>
+                    </div>
+                  </div>
+                  <div class="hero__slide swiper-slide">
+                    <img src="@img/hero-img.jpg" alt="">
+                    <h1 class="hero__title">Оснащаем жилые комплексы строительным оборудованием под ключ</h1>
+                    <div class="hero__buttons">
+                      <a class="hero__button button button-grey text-up"><span>Заказать звонок</span></a>
+                      <a class="hero__button button button-primary text-up"><span>Перейти в каталог</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-pagination swiper-pagination"></div>
+              </div>  
+            </div>
+            <div class="hero__buttons_mb">
+              <a class="hero__button button button-primary">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_152_2838)">
+                    <path d="M0 2.08333V9.16667H9.16667V0H2.08333C0.935 0 0 0.935 0 2.08333ZM8.33333 8.33333H0.833333V2.08333C0.833333 1.39417 1.39417 0.833333 2.08333 0.833333H8.33333V8.33333ZM17.9167 0H10.8333V9.16667H20V2.08333C20 0.935 19.065 0 17.9167 0ZM19.1667 8.33333H11.6667V0.833333H17.9167C18.6058 0.833333 19.1667 1.39417 19.1667 2.08333V8.33333ZM0 17.9167C0 19.065 0.935 20 2.08333 20H9.16667V10.8333H0V17.9167ZM0.833333 11.6667H8.33333V19.1667H2.08333C1.39417 19.1667 0.833333 18.6058 0.833333 17.9167V11.6667ZM10.8333 20H17.9167C19.065 20 20 19.065 20 17.9167V10.8333H10.8333V20ZM11.6667 11.6667H19.1667V17.9167C19.1667 18.6058 18.6058 19.1667 17.9167 19.1667H11.6667V11.6667Z" fill="#FFFAF8"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_152_2838">
+                      <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Каталог</span>
+              </a>
+              <a class="hero__button button button-stroke">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_153_2845)">
+                    <path d="M1.45833 1.46474L2.39167 0.647984C3.24166 -0.202104 4.68333 -0.243775 5.6 0.689655L7.15833 2.73153C8.03333 3.60663 8.03333 5.03177 7.15833 5.89853L5.91666 7.17366C7.26666 10.3407 9.75833 12.8409 12.825 14.0911L14.1 12.8493C14.525 12.4242 15.0833 12.1909 15.6833 12.1909C16.2833 12.1909 16.8417 12.4242 17.225 12.8159L19.3417 14.4494C20.2167 15.3245 20.2167 16.7497 19.3583 17.5997L18.5083 18.5749C17.5917 19.4916 16.3583 20 15.0167 20C8.55833 20 0 11.4324 0 4.98177C0 3.6483 0.508333 2.4065 1.44167 1.47307L1.45833 1.46474ZM15.0333 19.1582C16.15 19.1582 17.175 18.7415 17.9167 17.9998L18.7667 17.0164C19.3167 16.4663 19.3167 15.5745 18.8083 15.0578L16.6917 13.4243C16.425 13.1576 16.075 13.0076 15.6917 13.0076C15.3083 13.0076 14.9583 13.1576 14.6917 13.4243L13.2167 14.8661C13.1 14.9828 12.9333 15.0161 12.775 14.9578C9.29999 13.6327 6.475 10.8074 5.03333 7.22367C4.975 7.07365 5.00833 6.89864 5.125 6.77362L6.56666 5.29847C7.11666 4.74841 7.11666 3.85665 6.53333 3.26492L4.975 1.22304C4.425 0.672987 3.53333 0.672987 2.95833 1.23971L2.025 2.05646C1.26667 2.81488 0.85 3.83998 0.85 4.95677C0.85 10.9241 9.06666 19.1416 15.0333 19.1416V19.1582Z" fill="#0F0F0E"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_153_2845">
+                      <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Заказать звонок</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-catalog section-hidden">
+        <div class="container">
+          <div class="main-catalog__container">
+            <div class="main-catalog__slider">
+              <div class="swiper catalogSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main-catalog__card">
+                    <h2 class="main-catalog__caption">Сварочное оборудование</h2>
+                    <div class="main-catalog__txt">Подходит для решения многочисленных задач в процессе ремонтных, строительных и отделочных работ. Имеет два режима: построение произвольных линий и автоматическое</div>
+                    <a href="" class="main-catalog__button button button-primary text-up">подробнее</a>
+                    <img src="@img/catalog-1.png" alt="">
+                  </div>
+                  <div class="swiper-slide main-catalog__card">
+                    <h2 class="main-catalog__caption">Измерительные приборы и инструменты</h2>
+                    <div class="main-catalog__txt">Выполняет большинство задач по сварке, наплавке, а также резке металлических конструкций.</div>
+                    <a href="" class="main-catalog__button button button-grey text-up">подробнее</a>
+                    <img src="@img/catalog-2.png" alt="">
+                  </div>
+                  <div class="swiper-slide main-catalog__card">
+                    <h2 class="main-catalog__caption">Сварочное оборудование</h2>
+                    <div class="main-catalog__txt">Подходит для решения многочисленных задач в процессе ремонтных, строительных и отделочных работ. Имеет два режима: построение произвольных линий и автоматическое</div>
+                    <a href="" class="main-catalog__button button button-primary text-up">подробнее</a>
+                    <img src="@img/catalog-1.png" alt="">
+                  </div>
+                  <div class="swiper-slide main-catalog__card">
+                    <h2 class="main-catalog__caption">Измерительные приборы и инструменты</h2>
+                    <div class="main-catalog__txt">Выполняет большинство задач по сварке, наплавке, а также резке металлических конструкций.</div>
+                    <a href="" class="main-catalog__button button button-grey text-up">подробнее</a>
+                    <img src="@img/catalog-2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-products section-pad section-hidden">
+        <div class="container">
+          <div class="main-products__container">
+            <div class="main-products__heading heading indent-bottom">
+              <h2 class="main-products__title">Новинки и бестселлеры</h2>
+              <div class="main-products__arrows arrows">
+                <div class="swiper-arrow arrow-prev products-prev">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.80481 0.155151C6.99529 -0.0444999 7.31198 -0.0527672 7.51184 0.137573C7.71164 0.32792 7.71855 0.644641 7.52844 0.844604L1.66711 6.99988H20.5001C20.776 7.00008 21 7.22398 21.0001 7.49988C21.0001 7.7759 20.7761 7.99968 20.5001 7.99988H1.66711L7.52844 14.1552C7.71874 14.355 7.71147 14.6717 7.51184 14.8622C7.31189 15.0526 6.99526 15.0445 6.80481 14.8446L0.137817 7.8446C-0.0458737 7.65155 -0.0458737 7.34821 0.137817 7.15515L6.80481 0.155151Z" fill="#C23001"/>
+                  </svg>
+                </div>
+                <div class="swiper-arrow arrow-next products-next">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4883 0.137573C13.6883 -0.0525514 14.005 -0.0447054 14.1953 0.155151L20.8623 7.15515C21.0459 7.3481 21.0457 7.65155 20.8623 7.8446L14.1953 14.8446C14.0049 15.0445 13.6882 15.0526 13.4883 14.8622C13.2883 14.6717 13.2812 14.3551 13.4717 14.1552L19.333 7.99988H0.5C0.223858 7.99988 0 7.77602 0 7.49988C0.000143974 7.22386 0.223946 6.99988 0.5 6.99988H19.333L13.4717 0.844604C13.2812 0.644639 13.2883 0.328016 13.4883 0.137573Z" fill="#FFFAF8"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="main-products__slider">
+              <div class="swiper productsSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-1.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-green">В наличии</div>
+                      <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-2.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-orange">Под заказ</div>
+                      <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-1.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-green">В наличии</div>
+                      <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-2.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-orange">Под заказ</div>
+                      <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-1.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-green">В наличии</div>
+                      <a class="product-card__caption title-3" href="">Бетоносмеситель ALTECO БС 180 С</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-card">
+                    <a class="product-card__img" href=""><img src="@img/product-2.png" alt=""></a>
+                    <div class="product-card__content">
+                      <div class="product-card__stock accents-orange">Под заказ</div>
+                      <a class="product-card__caption title-3" href="">Машина бетоноотделочная ALTECO SE 100</a>
+                      <div class="product-card__price">
+                        <div class="price">21 340 ₸</div>
+                        <div class="old-price">22 340 ₸</div>
+                      </div>
+                      <div class="product-card__bottom">
+                        <a href="" class="product-card__button product-card__more button button-stroke text-up">
+                          <span>подробнее</span>
+                        </a>
+                        <a href="" class="product-card__button product-card__order button button-primary text-up">
+                          <span>заказать</span>
+                        </a>
+                        <a href="" class="product-card__cart button button-primary button-cart">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6791 7.36364C19.6136 7.34364 18.8063 7.10182 17.2518 6.86091C17.0363 3.04273 13.8709 0 10 0C6.12911 0 2.96367 3.04273 2.74821 6.86091C1.19367 7.10182 0.386404 7.34364 0.32095 7.36364C0.128223 7.42182 -0.00268544 7.60182 4.18204e-05 7.80364C0.0409507 10.9673 0.804584 17.37 3.44185 18.9773C3.53003 19.0191 5.65184 20 10 20C14.3482 20 16.47 19.0191 16.6009 18.9545C19.1963 17.3709 19.959 10.9682 20 7.80364C20.0027 7.60091 19.8718 7.42182 19.6791 7.36364ZM10 0.909091C13.3263 0.909091 16.0609 3.47636 16.3363 6.73273C14.7754 6.53364 12.6718 6.36364 10 6.36364C7.32819 6.36364 5.22457 6.53364 3.66366 6.73273C3.93912 3.47636 6.67365 0.909091 10 0.909091ZM16.17 18.1555C16.1509 18.1645 14.1173 19.0909 10 19.0909C5.91274 19.0909 3.88003 18.1782 3.87275 18.1782C2.07276 17.0791 1.02276 12.2627 0.916402 8.14455C3.65275 7.54364 6.04002 7.30636 10 7.27273C13.9573 7.30636 16.35 7.54364 19.0836 8.14455C18.9772 12.2627 17.9282 17.0782 16.17 18.1555Z" fill="#FFFAF8"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-feedback section-hidden">
+        <div class="container">
+          <div class="main-feedback__container">
+            <img src="@img/hero-img-2.jpg" alt="">
+            <div class="main-feedback__content">
+              <h2 class="main-feedback__title">Нужно рассчитать смету?</h2>
+              <div class="main-feedback__txt">Оставьте заявку и мы свяжемся с вами в ближайшее время</div>
+            </div>
+            <div class="main-feedback__form form">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="light" placeholder="Имя">
+                  <input type="tel" class="light" placeholder="Номер телефона">
+                  <input type="text" class="light" placeholder="Наименование компании">
+                  <input type="email" class="light" placeholder="E-mail">
+                </div>
+                <label class="form-agree">
+                  <input type="checkbox" name="" id="">
+                  Нажимая кнопку вы соглашаетесь с политикой конфиденциальности
+                </label>
+                <button type="submit" class="form-button button button-primary text-up">оставить заявку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-partners section-hidden">
+        <div class="container">
+          <div class="main-partners__container">
+            <h2 class="main-partners__title indent-bottom">Наши партнеры</h2>
+            <div class="main-partners__slider">
+              <div class="swiper partnersSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-1.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-2.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-3.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-4.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-5.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-6.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-1.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-2.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-3.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-4.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-5.png" alt=""></div>
+                  <div class="swiper-slide main-partners__img"><img src="@img/partners-6.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-review section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="main-review__container">
+            <h2 class="main-review__title">Что говорят клиенты о нас</h2>
+            <div class="main-review__slider">
+              <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review-card">
+                    <div class="review-card__icon">
+                      <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.48 0L9.44 29.7189L8.16 22.8112C10.72 22.8112 12.8 23.6145 14.4 25.2209C16 26.7202 16.8 28.755 16.8 31.3253C16.8 33.8956 16 35.9839 14.4 37.5904C12.8 39.1968 10.8267 40 8.48 40C5.92 40 3.84 39.1968 2.24 37.5904C0.746667 35.8768 0 33.7885 0 31.3253C0 30.3614 0.0533332 29.5047 0.16 28.755C0.266667 28.0054 0.48 27.095 0.8 26.0241C1.12 24.9531 1.54667 23.668 2.08 22.1687L8.8 0H16.48ZM43.68 0L36.64 29.7189L35.36 22.8112C37.92 22.8112 40 23.6145 41.6 25.2209C43.2 26.7202 44 28.755 44 31.3253C44 33.8956 43.2 35.9839 41.6 37.5904C40 39.1968 38.0267 40 35.68 40C33.12 40 31.04 39.1968 29.44 37.5904C27.9467 35.8768 27.2 33.7885 27.2 31.3253C27.2 30.3614 27.2533 29.5047 27.36 28.755C27.4667 28.0054 27.68 27.095 28 26.0241C28.32 24.9531 28.7467 23.668 29.28 22.1687L36 0H43.68Z" fill="#C23001"/>
+                      </svg>
+                    </div>
+                    <div class="review-card__txt">Но многие известные личности, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу!</div>
+                    <div class="review-card__bottom">
+                      <div class="review-card__group">
+                        <div class="review-card__author">Алихан Абаев</div>
+                        <div class="review-card__company">ТОО “G-Park”</div>
+                      </div>
+                      <div class="review-card__logo"><img src="@img/review-logo.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-card">
+                    <div class="review-card__icon">
+                      <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.48 0L9.44 29.7189L8.16 22.8112C10.72 22.8112 12.8 23.6145 14.4 25.2209C16 26.7202 16.8 28.755 16.8 31.3253C16.8 33.8956 16 35.9839 14.4 37.5904C12.8 39.1968 10.8267 40 8.48 40C5.92 40 3.84 39.1968 2.24 37.5904C0.746667 35.8768 0 33.7885 0 31.3253C0 30.3614 0.0533332 29.5047 0.16 28.755C0.266667 28.0054 0.48 27.095 0.8 26.0241C1.12 24.9531 1.54667 23.668 2.08 22.1687L8.8 0H16.48ZM43.68 0L36.64 29.7189L35.36 22.8112C37.92 22.8112 40 23.6145 41.6 25.2209C43.2 26.7202 44 28.755 44 31.3253C44 33.8956 43.2 35.9839 41.6 37.5904C40 39.1968 38.0267 40 35.68 40C33.12 40 31.04 39.1968 29.44 37.5904C27.9467 35.8768 27.2 33.7885 27.2 31.3253C27.2 30.3614 27.2533 29.5047 27.36 28.755C27.4667 28.0054 27.68 27.095 28 26.0241C28.32 24.9531 28.7467 23.668 29.28 22.1687L36 0H43.68Z" fill="#C23001"/>
+                      </svg>
+                    </div>
+                    <div class="review-card__txt">Но многие известные личности, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу!</div>
+                    <div class="review-card__bottom">
+                      <div class="review-card__group">
+                        <div class="review-card__author">Алихан Абаев</div>
+                        <div class="review-card__company">ТОО “G-Park”</div>
+                      </div>
+                      <div class="review-card__logo"><img src="@img/review-logo.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-card">
+                    <div class="review-card__icon">
+                      <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.48 0L9.44 29.7189L8.16 22.8112C10.72 22.8112 12.8 23.6145 14.4 25.2209C16 26.7202 16.8 28.755 16.8 31.3253C16.8 33.8956 16 35.9839 14.4 37.5904C12.8 39.1968 10.8267 40 8.48 40C5.92 40 3.84 39.1968 2.24 37.5904C0.746667 35.8768 0 33.7885 0 31.3253C0 30.3614 0.0533332 29.5047 0.16 28.755C0.266667 28.0054 0.48 27.095 0.8 26.0241C1.12 24.9531 1.54667 23.668 2.08 22.1687L8.8 0H16.48ZM43.68 0L36.64 29.7189L35.36 22.8112C37.92 22.8112 40 23.6145 41.6 25.2209C43.2 26.7202 44 28.755 44 31.3253C44 33.8956 43.2 35.9839 41.6 37.5904C40 39.1968 38.0267 40 35.68 40C33.12 40 31.04 39.1968 29.44 37.5904C27.9467 35.8768 27.2 33.7885 27.2 31.3253C27.2 30.3614 27.2533 29.5047 27.36 28.755C27.4667 28.0054 27.68 27.095 28 26.0241C28.32 24.9531 28.7467 23.668 29.28 22.1687L36 0H43.68Z" fill="#C23001"/>
+                      </svg>
+                    </div>
+                    <div class="review-card__txt">Но многие известные личности, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу!</div>
+                    <div class="review-card__bottom">
+                      <div class="review-card__group">
+                        <div class="review-card__author">Алихан Абаев</div>
+                        <div class="review-card__company">ТОО “G-Park”</div>
+                      </div>
+                      <div class="review-card__logo"><img src="@img/review-logo.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide review-card">
+                    <div class="review-card__icon">
+                      <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.48 0L9.44 29.7189L8.16 22.8112C10.72 22.8112 12.8 23.6145 14.4 25.2209C16 26.7202 16.8 28.755 16.8 31.3253C16.8 33.8956 16 35.9839 14.4 37.5904C12.8 39.1968 10.8267 40 8.48 40C5.92 40 3.84 39.1968 2.24 37.5904C0.746667 35.8768 0 33.7885 0 31.3253C0 30.3614 0.0533332 29.5047 0.16 28.755C0.266667 28.0054 0.48 27.095 0.8 26.0241C1.12 24.9531 1.54667 23.668 2.08 22.1687L8.8 0H16.48ZM43.68 0L36.64 29.7189L35.36 22.8112C37.92 22.8112 40 23.6145 41.6 25.2209C43.2 26.7202 44 28.755 44 31.3253C44 33.8956 43.2 35.9839 41.6 37.5904C40 39.1968 38.0267 40 35.68 40C33.12 40 31.04 39.1968 29.44 37.5904C27.9467 35.8768 27.2 33.7885 27.2 31.3253C27.2 30.3614 27.2533 29.5047 27.36 28.755C27.4667 28.0054 27.68 27.095 28 26.0241C28.32 24.9531 28.7467 23.668 29.28 22.1687L36 0H43.68Z" fill="#C23001"/>
+                      </svg>
+                    </div>
+                    <div class="review-card__txt">Но многие известные личности, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу!</div>
+                    <div class="review-card__bottom">
+                      <div class="review-card__group">
+                        <div class="review-card__author">Алихан Абаев</div>
+                        <div class="review-card__company">ТОО “G-Park”</div>
+                      </div>
+                      <div class="review-card__logo"><img src="@img/review-logo.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-review__arrows arrows">
+                <div class="swiper-arrow arrow-prev review-prev">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.80481 0.155151C6.99529 -0.0444999 7.31198 -0.0527672 7.51184 0.137573C7.71164 0.32792 7.71855 0.644641 7.52844 0.844604L1.66711 6.99988H20.5001C20.776 7.00008 21 7.22398 21.0001 7.49988C21.0001 7.7759 20.7761 7.99968 20.5001 7.99988H1.66711L7.52844 14.1552C7.71874 14.355 7.71147 14.6717 7.51184 14.8622C7.31189 15.0526 6.99526 15.0445 6.80481 14.8446L0.137817 7.8446C-0.0458737 7.65155 -0.0458737 7.34821 0.137817 7.15515L6.80481 0.155151Z" fill="#C23001"/>
+                  </svg>
+                </div>
+                <div class="swiper-arrow arrow-next review-next">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4883 0.137573C13.6883 -0.0525514 14.005 -0.0447054 14.1953 0.155151L20.8623 7.15515C21.0459 7.3481 21.0457 7.65155 20.8623 7.8446L14.1953 14.8446C14.0049 15.0445 13.6882 15.0526 13.4883 14.8622C13.2883 14.6717 13.2812 14.3551 13.4717 14.1552L19.333 7.99988H0.5C0.223858 7.99988 0 7.77602 0 7.49988C0.000143974 7.22386 0.223946 6.99988 0.5 6.99988H19.333L13.4717 0.844604C13.2812 0.644639 13.2883 0.328016 13.4883 0.137573Z" fill="#FFFAF8"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/modals.html')
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>
