@@ -179,16 +179,22 @@
       }
       &__txt {
         line-height: 1.2em;
+        @media(max-width: 1024px) {
+          font-size: calc(16 * var(--width-multiplier));
+        }
+        @media(max-width: 767px) {
+          font-size: calc(14 * var(--width-multiplier));
+        }
       }
       @media(max-width: 1024px) {
-        min-height: calc(580 * var(--width-multiplier));
+        min-height: calc(540 * var(--width-multiplier));
         padding: calc(20 * var(--width-multiplier));
-        padding-bottom: calc(300 * var(--width-multiplier));
+        padding-bottom: calc(250 * var(--width-multiplier));
       }
       @media(max-width: 767px) {
-        min-height: calc(480 * var(--width-multiplier));
+        min-height: calc(440 * var(--width-multiplier));
         padding: calc(16 * var(--width-multiplier));
-        padding-bottom: calc(250 * var(--width-multiplier));
+        padding-bottom: calc(200 * var(--width-multiplier));
       }
     }
   }
@@ -2107,6 +2113,13 @@
   }
   &__container {
     padding: calc(80 * var(--width-multiplier));
+    @media (max-width: 1024px) {
+      padding: calc(40 * var(--width-multiplier));
+    }
+    @media (max-width: 767px) {
+      padding: calc(16 * var(--width-multiplier));
+      padding-top: calc(30 * var(--width-multiplier));
+    }
   }
   &__close {
     position: absolute;
